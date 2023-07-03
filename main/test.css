@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #111;
+}
+h2{
+    position: absolute;
+    right: 650px;
+    top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+ .text2{
+    position: absolute;
+    right: 600px;
+    top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+h3{
+    position: absolute;
+    right: 160px;
+    top: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: #ff025f;
+}
+.hr {
+	width: 100%;
+	height: 2px;
+	background: #ff025f;
+}
+
+.container{
+    margin-top: 5px;
+    padding: 10px 10%;
+}
+nav{
+    background: #16213E;
+    height: 50px;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 15px;;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+nav ul li a:hover{
+    color: #ff025f;
+}
+
+.row{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-top{
+    width: 300px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.card  {
+    margin-left: 5px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #333232;
+    transition: 0.5s ease;
+}
+/* .card:hover {
+    box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+    transform: scale(1.1);
+    filter: grayscale(0%);
+} */
+.card h3{
+    color: #fff;
+}
+
+.card-album{
+    width: 200px;
+    border-radius: 10px;
+    filter: grayscale(60%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+iframe{
+    border-radius: 5px;
+}
+footer{
+    height: 50px;
+    background: #16213E;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        height: 100vh;
+        width: 100%;
+        background: #111;
+    }
+    h2{
+        position: absolute;
+        right: 650px;
+        top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 30px;
+    }
+     .text2{
+        position: absolute;
+        right: 600px;
+        top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 30px;
+    }
+    h3{
+        position: absolute;
+        right: 160px;
+        top: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    nav ul li{
+        display: inline-block;
+        position: relative;
+        left: 300px;
+        top: 15px;;
+    }
+    h2{
+        position: relative;
+        left: 100px;
+        top: -5px;
+    }
+    h3{
+        position: absolute;
+        top: 20;
+        left: 20px;
+    }
+    .img-top{
+        position: relative;
+        left: 90px;
+    }
+    .card{
+        position: relative;
+        left: 40px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        height: 100vh;
+        width: 100%;
+        background: #111;
+    }
+    h2{
+        position: absolute;
+        right: 650px;
+        top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 30px;
+    }
+     .text2{
+        position: absolute;
+        right: 600px;
+        top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 30px;
+    }
+    h3{
+        position: absolute;
+        right: 160px;
+        top: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+        position: relative;
+        left: 320px;
+        top: -180px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    nav ul li{
+        display: inline-block;
+        position: relative;
+        left: 200px;
+        top: 15px;;
+    }
+    .card{
+        position: relative;
+        left: 40px;
+        width: 40%;
+    }
+}

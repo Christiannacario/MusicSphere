@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/c1b34cd368.js" crossorigin=”anonymous”></script>
+</head>
+<body>
+    <div id="contact">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fas fa-paper-plane fa-fade"></i>christiannacario10@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt fa-fade"></i>097465289902</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=100009190524963"><i class="fab fa-facebook fa-bounce"></i></a>
+                        <a href="https://github.com/Christiannacario"><i class="fab fa-square-github fa-bounce"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-bounce"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form method="post">
+                        <input type="text" name="Name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="eg:example@outlook.com" required>
+                        <textarea name="Message" rows="6" id="message" placeholder="Message"></textarea>
+                        <button id="btn" class="btn btn2">send</button>
+                    </form>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e){
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var body = 'name' +name + '<br/> email: ' + email + '<br/> subject: ' + message;
+
+            Email.send({
+            SecureToken : "3ad95813-6e87-49d4-95e2-c817e48b1dea",
+            To : 'jejedregosons@gmail.com',
+            From : "ichanhaha1@gmail.com",
+            Subject : "contact message",
+            Body : body
+        }).then(
+        message => alert(message)
+        );
+        })
+    </script>
+</body>
+</html>

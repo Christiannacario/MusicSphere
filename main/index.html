@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c1b34cd368.js" crossorigin=”anonymous”></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class="logo">Music<span>Sphere</span></h3>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Artist">Album</a></li>
+                    <li><a href="#album-song">Artist</a></li>
+                    <li><a href="#About-Us">About Us</a></li>
+                    <!-- <li><a href="#" class="btn-login">Logout</a></li> -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <a href="../login.php" class="btn-login">Logout</a>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Your sound, your world<br> Stream it all with us.</h1>
+                <p>Pop & Rock Music</p>
+            </div>
+            <img src="../images/logo3.png" class="logopic">
+        </div>
+
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Log<span>in</span></h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-form">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link">Registers</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registra<span>tion</span></h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn-form">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----Login/registerform--- -->
+
+    
+
+    <!-- -----artist-- -->
+
+    <div id="Artist">
+        <div class="container">
+            <h1 class="sub-title">Al<Span>bum</Span></h1>
+            <div class="artist-list">
+                <div class="singer">
+                    <img src="../images/img1.jpeg" >
+                    <div class="layer">
+                        <h3>The Weeknd</h3>
+                        <h4>Stream</h4>
+                        <a href="mp3_artist3.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="singer">
+                    <img src="data/postmalone.jpg" >
+                    <div class="layer">
+                        <h3>Post Malone</h3>
+                        <h4>Stream</h4>
+                        <a href="mp3.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="singer">
+                    <img src="data/top1.png" >
+                    <div class="layer">
+                        <h3>Twenty One Pilots</h3>
+                        <h4>Stream</h4>
+                        <a href="mp3_artist2.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ---album---- -->
+
+    <div id="album-song">
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title">Art<Span>ist</Span></h1>
+                <div class="card">
+                    <img src="../images/img5.png" class="card-album">
+                    <h2>Week<span>nd</span></h2>
+                    <p>The Weeknd, born Abel Makkonen Tesfaye, is a Canadian singer, songwriter, and record producer. He first gained recognition with his mixtapes in 2011 and has since released several critically acclaimed albums, including "Beauty Behind the Madness" in 2015 and "After Hours" in 2020.</p>
+                </div>
+                <div class="card">
+                    <img src="../images/PMimg.png" class="card-album" height="325px">
+                    <h2>Post Ma<span>lone</span></h2>
+                    <p>Post Malone is an American rapper, singer, and songwriter known for his unique style of blending different genres such as hip hop, rock, and country. He gained recognition with his debut single "White Iverson" in 2015 and has since released three studio albums, with the most recent being "Hollywood's Bleeding" in 2019.</p>
+                </div>
+                <div class="card">
+                    <img src="../images/TOPimg2.png" class="card-album" height="320px">
+                    <h2>Twenty One Pi<span>lots</span></h2>
+                    <p>Twenty One Pilots is an American musical duo formed in 2009, consisting of Tyler Joseph and Josh Dun. The duo is known for their eclectic mix of alternative rock, hip-hop electronic music, as well as their energetic live performances. They gained mainstream recognition with their fourth studio album "Blurryface" in 2015.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="container">
+            <h1 class="sub-title">Songs <span>Album</span></h1>
+            <div class="album-list">
+                <div class="singer">
+                    <img src="../images/img5.png" >
+                    <div class="layer">
+                        <h3>Weeknd</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga, officiis impedit porro nulla pariatur quia magni culpa cupiditate neque.</p>
+                        <a href="../proj file/album website/index1.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="singer">
+                    <img src="../images/img4.jpeg" >
+                    <div class="layer">
+                        <h3>Weeknd</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga, officiis impedit porro nulla pariatur quia magni culpa cupiditate neque.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="singer">
+                    <img src="../images/img7.jpeg" >
+                    <div class="layer">
+                        <h3>Weeknd</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga, officiis impedit porro nulla pariatur quia magni culpa cupiditate neque.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </div> -->
+    <div class="hr"></div>
+    <div id="About-Us">
+         <div class="container">
+                <div class="row1">
+                        <div class="about-col-1">
+                            <img src="../images/New Project 89 [5F7250E].png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About <span>Us</span></h1>
+                            <p>Welcome to Music<span>shere</span>, your ultimate destination for all things music! Our platform is designed to bring together music enthusiasts from around the world and provide them with a one-stop-shop for discovering, exploring, and enjoying their favorite music. Whether you're a fan of rock, pop, classical, jazz, or any other genre, our platform has got you covered with a vast library of high-quality music and innovative features to enhance your listening experience. Join our community today and let's dive into the wonderful world of music together!</p>
+                            <!-- <a href="#" class="btn-learn">Learn More</a> -->
+                            <button class="btn-learn" onclick="togglePopup()">Learn More</button>
+                            <div class="social-icons">
+                                <span>Follow Us:</span>
+                                <a href="https://web.facebook.com/profile.php?id=100009190524963"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://instagram.com/nacario.c?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-square-instagram"></i></a>             
+                            </div>
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                    <h1>Music<span>shere</span></h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, at consectetur. Expedita facere nesciunt sequi.</p>
+                                    <div class="card1">
+                                        <div class="imgbox">
+                                            <img src="../images/img10.jpg">
+                                        </div>
+                                        <div class="content2">
+                                            <div class="details">
+                                                <h2>christian <span>Nacario</span></h2> <br><span>Developer</span>
+                                                <div class="data">
+                                                    <!-- <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-square-github"></i></a> -->
+                                                </div>
+                                                <div class="action-btn">
+                                                    <button><a href="https://www.tiktok.com/@christiannacario17?_t=8cY0K1Gq5iB&_r=1">Follow</a></button>
+                                                    <button><a href="contact.html">Message</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+        </div>
+    </div>
+
+    <footer id="footer">        
+        <div class="copyright">
+            <p>Musicsphere all rights reserved 2023</p>
+        </div>
+    </footer>
+
+    <div id="preloader"></div>
+
+    <a href="#" class="to-top"><i class="fa-sharp fa-solid fa-caret-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+</html>
